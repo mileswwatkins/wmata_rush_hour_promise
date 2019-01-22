@@ -3,7 +3,9 @@ WMATA Rush Hour Promise data
 
 ![](wmata-back2good-screenshot.png)
 
-The Washington Metropolitan Area Transportation Authority (or affectionally, WMATA) rolled out [the "Rush Hour Promise" program](https://www.wmata.com/fares/smartrip/rush-hour-promise.cfm) in 2018, as part of the organization's Back2Good initiative to revive its reputation. The Promise provides a full refund to Metrorail riders when train delays result in a significantly late arrivals at their destinations, during peak commuting hours.
+The Washington Metropolitan Area Transportation Authority (or affectionally, WMATA) rolled out [the "Rush Hour Promise" program](https://www.wmata.com/fares/smartrip/rush-hour-promise.cfm) in 2018, as part of the organization's Back2Good initiative to revive its reputation. The Promise provides a full refund to Metrorail riders when train delays result in a significantly late arrival to their destinations, during peak commuting hours.
+
+This repository demonstrates scraping the data from [WMATA's Daily Service Report Listings](https://www.wmata.com/service/daily-report/list.cfm), and structuring it into a CSV for analysis.
 
 ### Caveats to the data [[source](https://www.washingtonpost.com/news/dr-gridlock/wp/2018/01/11/is-metros-rush-hour-promise-as-good-as-it-sounds/)]
 
@@ -15,7 +17,7 @@ The Washington Metropolitan Area Transportation Authority (or affectionally, WMA
 
 Install the requirements using `bundle install`, under Ruby 2.6.
 
-Execute `./scraper.rb` to receive a running log as data is scraped from [WMATA's Daily Service Report Listings](https://www.wmata.com/service/daily-report/list.cfm).
+Execute `./scraper.rb` to receive a running log as data is scraped:
 
 ```
 $ ./scraper.rb
@@ -32,7 +34,7 @@ $ ./scraper.rb
 ...
 ```
 
-Upon completion, the data is exported to the `rush_hour_promise.csv` file.
+Upon completion, the data is stored in the `rush_hour_promise.csv` file.
 
 ### Insights from the data
 
